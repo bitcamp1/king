@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ page session="true" %> 
+<%@ page import="java.util.GregorianCalendar"%>
+<% request.setCharacterEncoding("utf-8");%>
+<% response.setCharacterEncoding("utf-8");%>
+ 
+<%--  <c:set var="home" value="${pageContext.request.contextPath}"/>
+ <c:set var="rsc" value="${home}/resources"/>
+ <c:set var="img" value="${rsc}/img"/>
+ <c:set var="images" value="${rsc}/images"/>
+ <c:set var="js" value="${rsc}/js"/>
+ <c:set var="css" value="${rsc}/css"/> --%>
+
+    
+
+
+<%
+	String gCtx = "${pageContext.request.contextPath}";
+	String gImg = "/resources/img";
+	String gJs = "/resources/js";
+	String gCss = "/resources/css";
+	String gFlash = "/resources/flash";
+	String gTitle = "::::::::::미래를 선도하는 IT기업 SKY::::::::::::";
+	String gIp = request.getRemoteAddr();
+	GregorianCalendar gNow = new GregorianCalendar();
+
+%>

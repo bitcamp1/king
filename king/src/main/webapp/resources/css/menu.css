@@ -1,0 +1,92 @@
+@CHARSET "UTF-8";
+
+
+div#content_jq{
+	border : solid 1px red;
+	width : 736px;
+	height : 100%;
+	float : right;
+	zoom : 1; /* IE5 ~ 7 Hack */
+}
+
+/*slide*/
+#banner-fade{
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+div#slider{
+	clear : both;
+	background-color : #EBEBEB;
+	width : 960px;
+	height : 300px;
+}
+
+#slideBox {
+	position: relative;
+	height: 300px;
+}
+
+.slides {
+	margin: 0 auto;
+	overflow: hidden;
+	margin-top: 2px;
+	position: relative;
+	background: #fff
+}
+
+#slideList {
+	width: 3000px;
+	position: relative;
+	left: 0
+}
+
+#slideList li {
+	float: left;
+	cursor: default
+}
+/* #slideList li a{overflow:hidden;width:89px;height:89px;display:block;margin:0 auto;background-image:url(btn_psvc_sprite0503.gif);background-repeat:no-repeat;cursor:pointer} 국민은행 참조이미지*/
+/* #slideList li span{text-indent:-9999px;overflow:hidden;width:89px;height:89px;display:block;} */
+#slide_prevBtn {
+	cursor: pointer;
+	width: 39px;
+	height: 51px;
+	padding: 10px; /* overflow:hidden */;
+	border: none;
+	background: url(../img/slide/slide_prevBtn.gif) no-repeat 10px 10px;
+	text-indent: -999px;
+	position: absolute;
+	left: 63px;
+	top: 170px;
+}
+
+#slide_prevBtn.on {
+	background-image: url(../img/slide/slide_prevBtn_on.gif)
+}
+
+#slide_nextBtn {
+	cursor: pointer;
+	width: 35px;
+	height: 51px;
+	padding: 10px; /* overflow:hidden */;
+	border: none;
+	background: url(../img/slide/slide_nextBtn.gif) no-repeat 10px 10px;
+	text-indent: -999px;
+	position: absolute;
+	right: 67px;
+	top: 170px;
+} /* 2013-03-29수정 */
+#slide_nextBtn.on {
+	background-image: url(../img/slide/slide_nextBtn_on.gif)
+}
+
+#slideList_0 {
+	background-position: 0 0
+}
+
+#slideList_1 {
+	background-position: -89px 0
+}
+
+#slideList_2 {
+	background-position: -178px 0
+}

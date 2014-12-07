@@ -1,0 +1,67 @@
+<!-- 래퍼 : 전체 바디를 감싸는 div -->
+<div id="msgWrapper">
+
+	<div id="msgMain_search">
+		<span><button class='button'  onClick="">전체</button></span>
+		<span><button class='button'  onClick="">보관</button></span>
+		<span><button class='button' onClick="">삭제</button></span> 
+		<span><input id="msgSearch" type="text" ></span>
+		<span><button class='' onClick="return func()">SEARCH</button></span>
+	</div>
+	
+	<!-- 내비 : 좌측 사이드 바-->	 
+	<div id='msgNav'>
+			<div>
+				<div id='msgNav_menuList'>
+					<span class='msgNavBtnBox'>
+						<a href='#writeMsgDialog' id='writeMsgBtn' class='wide'>쪽지쓰기</a>
+					</span>
+					<span class='msgNavBtnBox'>
+						<a href='#' id='receivedBoxBtn' class='wide'>받은쪽지함</a>
+					</span>
+					<span class='msgNavBtnBox'>
+						<a href="#" id='sendBoxBtn' class='wide' >보낸쪽지함</a> 
+					</span>
+					<span class='msgNavBtnBox'>
+						<a href="#" id='sysReceivedBoxBtn' class='wide'>시스템</a> 
+					</span>
+				</div>
+			</div>
+	</div>
+	
+	<!-- 받은 쪽지함, 보낸 쪽지함이 로드되는 영역 -->
+	<div id='msgMain'>
+	</div>
+	
+	<div id='messageClear'></div>
+</div>
+
+
+<!-- 메시지 쓰기 팝업 -->
+<div id='writeMsgPopupDiv' class='msgPopup'> <!-- div 한번 더 감싸지 않으면 페이지 로딩시 출력된다 -->
+	<div id='writeMsgDialog'>
+		<p>
+			<input type='text' id='msgReceiver' class='msgInput' placeholder='받는 사람' />
+		</p>
+		<p>
+			<input type='text' id='msgTitle' class='msgInput' placeholder='제목' />
+		</p>
+		<p>
+			<textarea id='msgContent' class='popupContent' placeholder='내용'></textarea>
+		</p>
+		<p>
+		<div id='writeMsgBtns'>
+			<span class='btnInline' id='msgCancel'><a class='wide' href='#'>취소</a></span>
+			<span class='btnInline' id='msgSend'><a class='wide' href='#'>보내기</a></span>
+		</div>
+		</p>		
+	</div>
+</div>
+
+<div id='readMsgPopupDiv' class='msgPopup'> <!-- div 한번 더 감싸지 않으면 페이지 로딩시 출력된다 -->
+
+</div>
+
+<script>
+	 message.init();
+</script>

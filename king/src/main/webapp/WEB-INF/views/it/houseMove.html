@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<!-- <script type="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script type="text/javascript">
+var chk=0;
+var debug = true; //이벤트가 빨리처리될때 버그 방지
+var obj = $('houseMove_ul');
+
+obj.css('width',163*length);
+function funcRoll2(e){
+	if(debug==false){return false;}
+	else{
+		debug = false;
+		if(e == 'L'){
+			if(chk==0){
+				alert('처음입니다');
+				debug = true;
+				return false;
+			}
+			if(chk>0){
+				obj.animate({
+					left:'+=163px'
+				},'slow',function(){
+					debug = true;
+				});
+				chk--;
+			}
+		}else{
+			if(chk==length-4){alert('마지막입니다');
+				debug = true;
+				return obj.animate({
+					left:'-=163px'
+				},function(){
+					debug = true;
+				});
+				chk++;
+			}
+		}
+	}
+};
+
+</script>
+</head>
+<body>
+
+	<div class='houseRoll'>
+		<div class='houseList'>
+			<ul id='houseMove_ul'>
+				 <li><img src="images/Koala.jpg" alt="Koala" /></li>
+	            <li><img src="images/Penguins.jpg" alt="Penguins" /></li>
+	            <li><img src="images/Tulips.jpg" alt="Tulips" /></li>
+            </ul>
+		</div>
+		<a href='#' id='goLeft'>LEFT</a>
+		<a href='#' id='goRight'>RIGHT</a>
+	</div>
+
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<div id='joinPage'>
+	<div id='joinMemberContents'>
+
+		<div class='joinMemberForm' id='joinMemberId'>
+			<label for='memberId'>아이디</label> 
+			<input  id='memberId' class='joinMemberInput' name="mb_id" placeholder='영문자, 숫자만 가능'/>
+<!-- 			<a id="checkDuplMsg" style="margin-left: 175px;"></a> -->
+		</div>
+
+		<div class='joinMemberForm' >
+			<label for='memberPwd'>패스워드</label> 
+			<input class='joinMemberInput' type='password' id='memberPwd' />
+		</div>
+
+	 	<div class='joinMemberForm' id='joinMemberPassword'>
+			<label for='confirmPwd'>패스워드 확인</label> 
+			<input class='joinMemberInput' type='password' id='confirmPwd' /> 
+		</div>
+		<div class='joinMemberForm' >
+			<label for='name'>이름</label> 
+			<input class='joinMemberInput' type='text' id='name' name="mb_name" />
+		</div>
+		
+		<div class='joinMemberForm'>
+			<label for='email'>E-mail</label> 
+			<input class='joinMemberInput' type='text' id='email' />
+		</div>
+
+		<div class='joinMemberForm' >
+			<label for='phoNo'>전화번호</label> 
+			<input class='joinMemberInput' type="text" id="phoNo" />
+		</div>
+
+		<div class='joinMemberForm'>
+			<label for="joinMemberZipCode1">우편번호</label>
+			<div id='joinMemberZipCode'>
+				<input type="text" id='joinMemberZipCode1' readonly='readonly'/> 
+				<div id='zipSearch'><a id='zipCodeLooking' href='#' class='wide'>검색</a></div>
+			</div>
+		</div>
+		
+		<div class='joinMemberForm' >
+			<label for='addr1'>주소</label>
+			<input type="text" class="joinMemberInput joinMemberAddr" id="addr1" readonly='readonly' />
+		</div>
+		
+		<div class='joinMemberForm' >
+			<label for="addr2">상세주소</label>
+			<input type="text" class="joinMemberInput joinMemberAddr" id="addr2" />
+		</div>
+	</div>
+	<!-- joinMemberContents end -->
+
+	<div id='joinMemberBottom'>
+		<div class='joinMemberForm' id='joinMemberFinalConfirm'>
+			<div class='joinMemberBtn' id='joinCancel'>취소</div>
+			<div class='joinMemberBtn' id='joinBtn'>회원가입</div>
+		</div>  
+	</div> <!-- joinMemberBottom end -->
+	
+</div> <!-- joinPage end -->
+
+
+<script>
+	joinMem.init();
+</script>

@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+.gnbWrap{
+	width : 960px;
+}
+.gnb {
+	display: inline-block;
+	color: rgb(92, 255, 0);
+	position: relative;
+	width: 100%;
+	height: 150px;
+	margin: 0 auto;
+	font-weight: bold;
+	/* url(../images_grims/bg_menu.png) 0 0 no-repeat 백그라운드 이미지 넣기*/
+}
+.gnb2 ul li a {
+	
+	 
+	/* background: url(../images_grims/bg_line.gif) 0 0 no-repeat; */
+	position: relative;
+	 z-index: 10 ;
+}
+ 
+
+.gnb ul {
+	position: absolute;
+	background-color: black;
+	width : 100%;
+	 z-index: 10 ;
+	 margin : 0;
+	 display : inline;
+	 list-style-type: none;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+	-webkit-padding-start: 0;
+}
+
+.gnb ul li {
+	float: left;
+	display: inline;
+}
+
+.gnbList span {
+	display: inline-block;
+	color: #fff;
+	padding: 10px 12px;  
+	font-weight: bold;
+	/* background: url(../images_grims/bg_line.gif) 0 0 no-repeat; */
+	position: relative;
+	 z-index: 10 
+}
+
+
+ .gnbsub {
+	position: absolute;
+	/* top: 35px; */
+	left: 0;
+	width: 100%;
+	height : 200px;
+	
+	
+}
+
+.gnbsub ul {
+	position: absolute;
+	display: block;
+	list-style-type: disc;
+	background-color: orange;
+	text-align : left;
+	margin : 0;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+	-webkit-padding-start: 0;
+}
+
+.gnbsub ul li {
+	float: left;
+	display: block;
+	padding : 10px;
+}
+.gnbList{
+	text-decoration:none;
+}
+
+
+</style>
+<script src="../../js/jquery-1.9.1.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	 $(".gnbsub").hide();
+     $(".gnb>ul>li").hover(function() {
+	   $(this).children("div").show();
+	 },function() {
+	   $(".gnbsub").hide();
+	   $(".gnbList").children(".over").show();
+	 });
+ 
+ $(".gnbsub").children(".over").show();
+});
+</script>
+</head>
+<body>
+ <div id='gngWrap'>
+	<div class="gnb">
+   <ul>
+             <!-- li class 에 on을 주면 활성화 됨 -->
+    	<li class="gnbList"><span>ABOUTNML</span> 
+    	
+    	<!--  <div class="over" style="left:10px"><span class="left" style="padding:0 40px"></span><span class="right"></span></div> -->
+				<div class="gnbsub">
+					<ul>
+						<li><a href="#" >About NML</a></li>
+					</ul>
+				</div>
+		</li>
+                
+    <li class="gnbList"><span>PEOPLE</span>
+                <div class="gnbsub">
+	                <ul  >
+	                  <li><a href="#" >Professor</a></li>
+	                  <li><a href="#">Ph.D course</a></li>
+	                  <li><a href="#">Master Course</a></li>
+	                  <li><a href="#">Post Docter</a></li>
+	                  <li><a href="#">Alumini-Ph.D</a></li>
+	                  <li><a href="#">Alumini-Master</a></li>
+	               </ul>
+                 </div>
+                </li>
+                
+    <li class="gnbList"><span>ACTIVITY</span>
+                <div class="gnbsub">
+                 <ul >
+              <li><a href="#" >International Conference</a></li>
+                 <li><a href="#">Domestic Conference</a></li>
+                 <li><a href="#">NML Workshop</a></li>
+                 <li><a href="#">NML group meetiong</a></li>
+             </ul>
+                 </div>
+                </li>
+                
+    <li class="gnbList"><span>PUBLICATION</span>
+                <div class="gnbsub">
+                <ul >
+              <li><a href="#" >SCI Joumals</a></li>
+                 <li><a href="#">Domestic Journals</a></li>
+                 <li><a href="#">Conferenice Proceedings</a></li>
+                 <li><a href="#">Dissertation</a></li>
+                 <li><a href="#">Research Reports</a></li>
+             </ul>
+                 </div>
+                </li>
+                
+    <li class="gnbList"><span>LECTURE</span>
+                <div class="gnbsub">
+                <ul >
+               <li><a href="#" >Graduate Course</a></li>
+                  <li><a href="#">UnderGraduate Course</a></li>
+              </ul>
+                 </div>
+                </li>
+                
+    <li class="gnbList"><span>BBS</span>
+                <div class="gnbsub">
+	                <ul >
+	               	  <li><a href="#">Notice</a></li>
+	                  <li><a href="#">Free Board</a></li>
+	                  <li><a href="#">Paper List</a></li>
+	                  <li><a href="#">Dissertation</a></li>
+	                  <li><a href="#">Album</a></li>
+	                  <li><a href="#">Related Sites</a></li>
+	                  <li><a href="#">Q&amp;A</a></li>
+		            </ul>
+                 </div>
+                </li>
+                
+   </ul>
+             
+  </div>
+</div>
+</body>
+</html>

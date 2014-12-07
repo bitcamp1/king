@@ -1,0 +1,75 @@
+<div id='myInfo'>  
+	<div id='info_image'>	
+		<div id="myProfileImg">
+			<img id="myInfoProfileImg">
+		</div>
+		<div id='imgSelect'>
+			<label for=''>사진 등록/변경</label><br>
+			<span><input type="file" onchange="previewImage(this,'myProfileImg')" id="selectImgBtn" class='button'/></span>
+		</div>
+		<div id='imgUpload'>
+			<button class='button' name="confirm" id='imgUpload_AddBtn'>등록</button>
+			<button class='button' name="cancel" id='imgUpload_ResetBtn'>취소</button>
+		</div>
+	</div>
+	<div id="info_list">
+	</div>
+	<div id='info_bottom'>
+		<button id='myInfoUpdateBtn' class='button'>정보수정</button>
+		<button id='withdrawalBtn' class='button'>회원탈퇴</button>
+	</div>
+</div> <!-- // myInfo-->
+<div id='infoUpdateForm'> <!-- 정보수정 버튼을 누르면 보여지는 부분 -->
+	<div class='join'>
+		<label for='id'>아이디 </label>
+		<input type='text' id='updateForm_id'/> 
+	</div>
+	<div class='join'>
+		<label for='password'>패스워드 </label>
+		<input type='password' id='updateForm_password'/> 
+	</div>
+	<div class='join'>
+		<label for='password2'>패스워드 확인 </label>
+		<input type='password' id='updateForm_password2'/> 
+	</div>
+	<div class='join'>
+		<label for='name'> 이름 </label>
+		<input type='text' id='updateForm_name'/> 
+	</div>
+	<div class='join'>
+		<label for='email'>이메일 </label>
+		<input type='text' id='updateForm_email'/> 
+	</div>
+	<div class='join'>
+		<label for='telephone'> 전화번호</label>
+		<input type='text' id='updateForm_telephone'/> 
+	</div>
+	<div class='join'>
+		<label for='celphone'> 휴대전화</label>
+		<input type='text' id='updateForm_celphone'/> 
+	</div>
+	<div class='join'>
+		<label for='zipcode'>우편번호 </label>
+		<input type='text' id='updateForm_zipcode'/> 
+		<button id=updateForm_zipcodeLooking>우편번호찾기</button>
+	</div>
+	<div class='join'>
+		<label for='updateForm_address'> 주소 </label>
+		<input type='text' id='updateForm_address'/> 
+	</div>
+	<div class='join'>
+		<label for='updateForm_address2'>상세주소 </label>
+		<input type='text' id='updateForm_address2'/> 
+	</div>
+
+	<div class='join' >
+		<button class='button' id='updateForm_btn_confrim'> 확인</button>
+		<button class='button' id='updateForm_btn_cancel'>취소</button> 
+	</div>
+</div>	
+<script>
+	myInfo.init();
+
+</script>
+
+

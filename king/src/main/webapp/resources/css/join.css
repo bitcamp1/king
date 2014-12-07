@@ -1,0 +1,280 @@
+@CHARSET "UTF-8";
+#joinPage {
+	border : 1px red solid;
+	display : block;
+	position: relative;
+	width       : 800px;
+	height      : 100%;
+	margin : 0 auto;
+	padding-top: 80px;
+	font-size: 0.9em;
+	overflow : hidden;
+}
+
+.joinMemberForm {
+	*border : 1px #FAFAFA solid;
+	display : block;
+	height : 40px;
+	width : 600px;
+	margin : 20px auto 10px auto; 
+}
+
+.joinMemberForm label {
+	*background-color : #FAFAFA;
+	*border : 1px blue solid;
+	display : inline-block;
+	float : left;
+	width : 140px;
+	text-align : right;
+	line-height : 40px;
+	*margin : 10px 0 10px 80px; 
+	font-size: 12px;
+	font: black;
+	font-weight: bold;
+}
+
+/* #memberId { */
+/* 	background : #FFF url('../img/status.png') no-repeat scroll; */
+/* 	background-position : 240px 10px; */
+	
+/* } */
+
+#memberId.statusOk {
+	background-position : 200px, 0px;
+}
+
+.statusNo {
+	
+}
+
+.joinMemberInput {
+	border : 1px solid #D3D4D5;
+	display : block;
+	width : 250px;
+	height : 36px;
+	margin : 0 0 0 200px;
+	*outline : thin solid #D3D4D5;
+	padding-left : 15px;
+}
+
+#joinMemberContents input:focus {
+	*outline : thin solid #0995E0;
+	border : 1px solid #0995E0;
+}
+
+#joinMemberZipCode {
+	position : relative;
+	*border : 1px blue solid;
+	display : block;
+	*float : right;
+	width : 350px;
+	height : 36px;
+	*margin-top : -70px;
+	margin-left : 200px;
+}
+
+#joinMemberZipCode1, #joinMemberZipCode2 {
+	border : 1px #D3D4D5 solid;
+}
+
+#zipSearch {
+	position : relative;
+	border : 1px #D3D4D5 solid;
+	display : inline-block;
+	width : 70px;
+	height : 36px;
+	*top : 3px;
+	margin-left : 5px;
+	line-height : 36px;
+	text-align : center;
+	cursor : pointer;
+	background-color : #0995E0;
+	color : #FFF;
+}
+
+#zipSearch a {
+	color : #FFF;
+}
+
+#zipSearch a:hover {
+	color : #FFF;
+}
+
+#zipSearch a:visited {
+	color : #FFF;
+}
+
+#zipSearch a:active {
+	color : #FFF;
+}
+
+#joinMemberZipCode input {
+	width  : 170px;
+	height : 36px;
+	margin : 0 auto;
+	border : 1px solid #D3D4D5;
+	*outline : thin solid #D3D4D5;
+	padding-left : 15px;
+}
+
+#joinMemberContents {
+	*border: 1px red solid;
+	display: block;
+	width: 600px;
+	position: relative;
+	margin: 0 auto;
+}
+
+#joinMemberBottom {
+	*border: 1px red solid;
+	display: block;
+	width: 240px;
+	height : 75px;
+	margin: 10px auto 20px auto;
+}
+
+.joinMemberBtn {
+	border : 1px #D3D4D5 solid;
+	display : inline-block;
+	margin-top : 20px;
+	*padding-bottom : 20px;
+	width: 100px;
+	height : 36px;
+	line-height : 36px;
+	text-align : center;
+	cursor : pointer;
+}
+
+#joinBtn {
+	margin-left : 32px;
+}
+
+.confirmId {
+	*border : 1px red solid;
+	display : block;
+	position : relative;
+	top : -39px;
+	left : 475px;
+	width : 200px;
+	height : 36px;
+	line-height : 36px;	
+}
+
+.equalPwd {
+	*border : 1px red solid;
+	display : block;
+	position : relative;
+	top : -39px;
+	left : 475px;
+	width : 200px;
+	height : 36px;
+	line-height : 36px;
+}
+
+/* 이하는 우편번호찾기 팝업 폼 */
+
+#postWrapper {
+	*border : 1px red solid;
+	width   : 500px;
+	height  : 100%;
+	display : block;
+	margin : 0 auto;	
+}
+
+#postBox {
+	*border : 1px blue solid;
+	display : block;
+	position : relative;
+	top : 30px;
+	width : 338px;
+	height : 100%;
+	margin : 0 auto;
+}
+
+#postPage {
+	*border : 1px red solid;
+	text-align: left;
+	color: red;
+	width: 338px;
+	height  : 25px;
+}
+
+#postInput  {
+	*border : 1px red solid;
+	display : block;
+	position : relative;
+	top : 20px;
+	font-size: 1em;
+	height  : 60px;
+	width : 338px;
+	line-height : 30px;
+	text-align: left;	
+}
+
+#postExample {
+	*border : 1px;
+	display : block;
+	position : relative;
+	top : 20px;
+	height  : 36px;
+	line-height : 36px;
+	font-size: 0.9em;
+	text-align: left;
+	border-collapse: separate;
+	border-spacing: 2px;
+}
+
+#postSearch {
+	display : block;
+	position : relative;
+	top : 30px;
+	font-size: 0.9em;
+	width : 338px;
+	background-color: #EBEBEB;
+	text-align: left;
+	color: black;
+}
+
+#postResultTable {
+	display : block;
+	width : 400px;
+	margin : 10px auto 0 auto;
+	border-collapse: collapse;
+}
+
+#postResultTable tr {
+	height : 30px;
+	line-height : 30px;
+}
+
+#postResultTable th {
+	border : 1px #D3D4D5 solid;
+}
+
+#postResultTable td {
+	border : 1px #D3D4D5 solid;
+}
+
+.postAddr {
+	padding-left : 10px;	
+}
+
+.postZip {
+	text-align : center;
+}
+
+#postResultTable a {
+	color : #000;
+}
+
+#postResultTable a:hover {
+	color : #000;
+}
+
+#postResultTable a:visited {
+	color : #000;
+}
+
+#postResultTable a:linked {
+	color : #000;
+}

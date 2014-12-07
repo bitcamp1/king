@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+           xmlns:context="http://www.springframework.org/schema/context"
+           xmlns:mvc="http://www.springframework.org/schema/mvc"
+            xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+    http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd
+           http://www.springframework.org/schema/mvc
+           http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+ <context:component-scan base-package="com.cpms.web.controller"/>
+
+     <mvc:annotation-driven 
+        content-negotiation-manager="contentNegotiationManager" /> 
+
+    <bean id="contentNegotiationManager" 
+class="org.springframework.web.accept.ContentNegotiationManagerFactoryBean">
+        <property name="favorPathExtension" value="false" />
+        <property name="favorParameter" value="true" />
+        <property name="mediaTypes" >
+            <value>
+                json=application/json
+                xml=application/xml
+                atom=application/atom+xml
+                html=text/html
+            </value>
+        </property>
+    </bean>
+
+    <bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
+      <property name="viewResolvers">
+        <list>
+          <bean class="org.springframework.web.servlet.view.BeanNameViewResolver"/>
+          <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+            <property name="prefix" value="/WEB-INF/views/"/>
+            <property name="suffix" value=".jsp"/>
+          </bean>
+        </list>
+      </property>
+      <property name="defaultViews">
+        <list>
+          <bean class="org.springframework.web.servlet.view.json.MappingJackson2JsonView" />
+        </list>
+      </property>
+    </bean>
+     <!-- 인터셉터 등록 -->
+
+    <!--  
+    <bean id="testInterceptor" 
+        class="net.bitacademy.java33.interceptors.TestInterceptor"/>
+    
+    <bean id="test2Interceptor" 
+        class="net.bitacademy.java33.interceptors.Test2Interceptor"/>
+        
+    <bean id="handlerMapping"
+          class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping">
+        <property name="order" value="1"/>
+        <property name="interceptors">
+            <list>
+                <ref bean="testInterceptor"/>
+                <ref bean="test2Interceptor"/>
+            </list>
+        </property>
+    </bean>    
+    -->
+   
+</beans>

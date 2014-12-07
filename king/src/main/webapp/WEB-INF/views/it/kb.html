@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Pragma" content="no-cache" /> 
+<meta http-equiv="Cache-Control" content="No-Cache" /> 
+<title>KB국민은행</title>
+<meta name="viewport" content="width=980px" />
+<link rel="stylesheet" type="text/css" href="https://www.kbstar.com/openimg/openkbintro_20130604.css" />
+<script type="text/javascript" src="https://www.kbstar.com/openimg/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" >
+		$(function(){	
+			var itemUnit = 101;
+			var stageWidth = itemUnit*7;
+
+			
+			var orderArray = [];
+			
+			var defaultOrderArray = [];
+			/*
+			$('#psvcList li').each(function(i){
+				defaultOrderArray.push($(this).html())
+			});
+			*/
+			
+			var reOrderHTMLArray = [];
+			var reOrderSetHTMLArray = [];
+			var itemLen = $('#psvcList').length;
+			var count = 1;
+			
+			
+
+			
+
+			
+			$('#btnPrev,#btnNext').hover(function(){$(this).addClass('on')},function(){$(this).removeClass('on')});	
+			var countMax = Math.ceil($('.mask li').length*itemUnit/stageWidth);
+			$('#btnPrev').click(function(){		
+				if(count > 1) {
+					$('.mask ul').animate({left:'+='+stageWidth+'px'},350);
+					count--;
+				}
+			});
+			$('#btnNext').click(function(){		
+				if(count < countMax) {
+					$('.mask ul').animate({left:'-'+count*stageWidth+'px'},350);
+					count++;
+				} 
+			});	
+		});
+</script>
+</head>	
+<body>
+<div id="primarySvcWrap">
+	<div class="contWrap">
+		<div id="scrollSetMenuWrap">
+			<div id="scrollSetMenu">
+				<div class="controller">
+					<button type="button" id="btnPrev">자주쓰는 메뉴 이전</button><!-- 2013-02-28 대체텍스트수정 -->
+					<button type="button" id="btnNext">자주쓰는 메뉴 다음</button><!-- 2013-02-28 대체텍스트수정 -->
+				</div>
+				<div class="mask">
+					<ul id="psvcList">
+						<li><a href="https://obank.kbstar.com/quics?page=C016513" id="psvc_0"><span>전예금조회</span></a></li>
+						<li><a href="https://obank.kbstar.com/quics?page=C016539" id="psvc_1"><span>계좌이체</span></a></li>
+						<li><a href="javascript:FastAccountScan()" id="psvc_2"><span>빠른조회</span></a></li>
+						<li><a href="https://obank.kbstar.com/quics?page=C016534" id="psvc_3"><span>금융상품</span></a></li>
+						<li><a href="http://nland.kbstar.com/quics?page=B025914" id="psvc_4"><span>KB아파트 시세</span></a></li>
+                        <li><a href="http://www.kbcard.com/" id="psvc_5"><span>KB국민카드</span></a></li>
+						<li><a href="https://omoney.kbstar.com/quics?page=C021609" id="psvc_6"><span>KB스타뱅킹</span></a></li>
+						<li><a href="https://omoney.kbstar.com/quics?page=C027763" id="psvc_7"><span>노후설계</span></a></li>
+						<li><a href="https://omoney.kbstar.com/quics?page=C016505" id="psvc_8"><span>지점안내</span></a></li>
+                        <li><a href="https://okbfex.kbstar.com/quics?page=C015690" id="psvc_9"><span>환율조회</span></a></li>
+						<li><a href="https://obank.kbstar.com/quics?page=C025764" id="psvc_10"><span>빠른예금신규</span></a></li>
+						<li><a href="https://obank.kbstar.com/quics?page=C019763" id="psvc_11"><span>고객상담FAQ</span></a></li>
+						<li><a href="https://obank.kbstar.com/quics?page=C016526" id="psvc_12"><span>공과금납부</span></a></li>
+						<li><a href="http://nland.kbstar.com/quics?page=B025868" id="psvc_13"><span>분양정보</span></a></li>
+						<li><a href="https://okbfex.kbstar.com/quics?page=C018636" id="psvc_14"><span>해외은행송금</span></a></li>
+						<li><a href="javascript:moneybook()" id="psvc_15"><span>가계부</span></a></li>
+						<li><a href="https://obank.kbstar.com/quics?page=C019825" id="psvc_16"><span>전자민원접수</span></a></li>
+						<li><a href="https://omoney.kbstar.com/quics?page=omoney" id="psvc_17"><span>STAR TABLE</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

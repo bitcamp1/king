@@ -1,0 +1,57 @@
+@CHARSET "UTF-8";
+
+#eom-wrap{
+	width : 960px;
+	height : 500px;
+}
+#eom-wrap div{
+	
+}
+#eom-logo{
+	font-size: 36px;
+}
+#eom-menu{
+	text-align : center;
+	
+}
+#eom-menu a{
+	margin 3px 5px;
+}
+#eom-index{
+	width : 960px;
+	
+}
+#eom-header{
+	width : 960px;
+	height : 80px;
+	margin-bottom : 5px;
+	border : solid 1px grey;
+}
+#eom-nav{
+	float : left;
+	width : 200px;
+	height : 600px;
+	padding : 0 5px;
+	border : solid 1px grey;
+	
+}
+#eom-contents{
+	width : 730px;
+	height : 600px;
+	float : right ;
+	padding : 0 5px;
+	border : solid 1px grey;
+}
+#eom-memberForm ul{
+	padding : 0;
+}
+#eom-memberForm li{
+	list-style : none;
+}
+#eom-memberForm label{
+	float : left;
+	width :60px;
+	text-align : right ;
+	margin : 4px 5px 0 0;
+}
+

@@ -1,0 +1,18 @@
+@CHARSET "UTF-8";
+
+#jqueryWrapper{
+	width : 960px;
+	margin : 0 auto;
+	background-color: white;
+	border: 1px grey dotted;
+}
+
+#accordion{
+	cursor : pointer;
+}
+#gnb{
+	cursor : pointer;
+}
+#a-slider{
+	cursor : pointer;
+}

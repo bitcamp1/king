@@ -1,0 +1,18 @@
+@CHARSET "UTF-8";
+table#bookTable{
+	width : 100%;
+	
+	border : 2px solid blue; 
+}
+#bookTable tr th{
+	border : 1px solid blue; 
+	height : 20px;
+	width : 30%;
+}
+#bookTable tr td{
+	border : 1px solid blue; 
+	height : 20px;
+	width : 30%;
+	font-size: 12px;
+	padding-left : 5px;
+}

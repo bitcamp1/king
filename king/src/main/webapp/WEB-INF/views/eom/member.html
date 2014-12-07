@@ -1,0 +1,64 @@
+<div id='eom-memberPanel'>
+	<h1> 멤버 목록 </h1>
+	<div>
+		<table id='eom-memberTable'>
+			<tr>
+				<th>이름</th>
+				<th>이메일</th>
+				<th>전화</th>
+			</tr>
+			
+			
+		</table>
+		<p>
+			<a id='eom-prevList' href='#'>이전</a>
+			<span id='eom-currPageNo'></span>
+			<a id='eom-nextList' href='#'></a>
+		</p>
+	</div>
+	
+	<h2>멤버 정보</h2>
+	<div>
+		<form id='eom-memForm'>
+			<ul>
+			
+				<li>
+					<label for='eom-email'>이메일</label>	
+					<input id='eom-email' type='text' name='email'>
+				</li>
+					
+					
+				<li>
+					<label for='eom-name'>이름</label>
+					<input id='eom-name' type='text' name='name'>
+				</li>
+				<li>
+					<label for='eom-tel'>전화</label>
+					<input id='eom-tel' type='text' name='tel'>
+				</li>
+				<li>
+					<label for='eom-password'>암호</label>
+					<input id='eom-password' type='password' name='password'>
+				</li>
+				<li>
+					<label for='eom-regDate'>가입일</label>
+					<input id='eom-regDate' type='text' name='regDate' readonly>
+				</li>
+				<li>
+					<label></label>
+					<input type='button' class='button' value='등록'>
+					<input type='button' class='button' value='변경'>
+					<input type='button' class='button' value='삭제'>
+					<input type='button' class='button' value='취소'>
+				</li>
+			</ul>
+		
+		</form>
+		<h3>
+			프로젝트
+		</h3>
+	<ul id='projects'>
+	</ul>
+	</div>
+
+</div>

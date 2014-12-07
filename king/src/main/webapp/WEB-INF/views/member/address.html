@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>우편번호검색 및 주소입력</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel='stylesheet' href='../../css/joinPopupPage.css'>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/joinPopup.js"></script>
+</head>
+<body>
+<div id="postWrapper">
+	<div id='postBox'>
+		<div id="postPage">	
+			<span>
+				<img src="../../img/tl_search_zip.gif" id="post1">
+			</span>	
+		</div>
+		<div id="postInput">
+			<span>
+				입력할 지역의 동이나 읍/면의 이름을 빈칸없이 입력한 후 [찾기]버튼을 누르세요.
+			</span>
+		</div>
+		<div id="postExample">
+			<span>
+				보기 : 마장동, 왕십리, 사천읍, 고현면
+			</span>
+		</div>
+		<div id="postSearch">			
+			<fieldset>  			
+			    [동 / 읍 / 면]	    
+			    <input type="text" id="address">&nbsp; <button type="submit" id="searchZipcode" onClick="ZipcodeUpload.searchZipcode()">찾기</button>
+			</fieldset>
+		</div>	
+		<div>	
+		    <!-- 테이블로 출력 -->
+		</div>
+	</div>	
+</div>
+</body>
+</html>
